@@ -3,6 +3,8 @@ import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import Banner from './Components/Banner/Banner.jsx';
 import WhyChoose from './Components/WhyChoose/WhyChoose.jsx';
+import About from './Components/About/About.jsx';
+import Footer from './Components/Footer/Footer.jsx';
 
 const App = () => {
   return (
@@ -11,7 +13,9 @@ const App = () => {
       <Hero />
       <Banner />
       <WhyChoose />
-      <About/>
+      <Banner/>
+      <About />
+      <Footer/>
     </div>
   )
 }
