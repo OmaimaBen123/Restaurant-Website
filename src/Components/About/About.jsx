@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaUser } from 'react-icons/fa';
 
-const About = () => {
+const About = (HandlePop ) => {
     return (
     <>
     <div>
@@ -11,7 +11,7 @@ const About = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo distinctio assumenda recusandae odio sit eveniet reiciendis molestias nemo obcaecati, porro accusantium, perferendis provident nostrum totam libero blanditiis mollitia cupiditate eligendi consectetur eius, tempore vero! Delectus vero iure dolor earum id molestiae beatae alias quia? Beatae similique molestiae quibusdam consequuntur possimus facere perspiciatis, facilis tempore, unde quia obcaecati eligendi magnam suscipit!
                         <div className='pt-10 flex justify-center'>
 
-                             <button className='flex justify-center items-center gap-2 bg-secondary text-white text-xl py-2 px-5 rounded hover:scale-105 h-[40px] duration-300'>
+                             <button onClick={HandlePop} className='flex justify-center items-center gap-2 bg-secondary text-white text-xl py-2 px-5 rounded hover:scale-105 h-[40px] duration-300'>
                                 <FaUser className=''/>
                                 Account
                             </button>

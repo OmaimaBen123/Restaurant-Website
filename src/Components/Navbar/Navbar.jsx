@@ -14,7 +14,7 @@ const DropDownLinks = [
     { id: 3, name: "Grains", link: "/#" },
 ];
 
-const Navbar = () => {
+const Navbar = ({HandlePop}) => {
     return (
         <div className='bg-white shadow-sm'>
             <div className="container flex justify-between py-4 sm:py-3">
@@ -54,7 +54,7 @@ const Navbar = () => {
                         </li>
                         {/* login button section */}
                         <li>
-                            <button className='flex justify-center items-center gap-2 bg-secondary text-white text-xl py-2 px-5 rounded hover:scale-105 h-[40px] duration-300'>
+                            <button onClick={HandlePop} className='flex justify-center items-center gap-2 bg-secondary text-white text-xl py-2 px-5 rounded hover:scale-105 h-[40px] duration-300'>
                                 <FaUser className=''/>
                                 Account
                             </button>
